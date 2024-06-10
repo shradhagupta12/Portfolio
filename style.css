@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+}
+
+span {
+    color: #6B8A7A;
+    font-weight: bold;
+}
+
+h2 {
+    color: #254336;
+}
+
+/* Mobile approch */
+.menu-item {
+    display: none;
+    list-style: none;
+}
+
+.nav-header ul li {
+    padding-bottom: 5%;
+    margin-top: 5%;
+}
+
+.nav-header ul li a {
+    text-decoration: none;
+    color: #254336;
+}
+
+#hamburger-icon i {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    margin-right: 6%;
+    cursor: pointer;
+    margin-top: -8%;
+    font-size: 1.5rem;
+}
+
+.show {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #DAD3BE;
+    max-height: 100%;
+    position: absolute;
+    z-index: 999;
+    margin-top: 2%;
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    display: none;
+}
+
+
+.logos {
+    list-style: none;
+    margin-top: 4%;
+}
+
+.logos a {
+    margin-left: 6%;
+    font-size: 1.3rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: #254336;
+}
+
+
+/*  Hero section */
+
+
+#home {
+    display: grid;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-content h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    width: 72%;
+}
+
+.main-content p {
+    text-align: center;
+    margin-top: 2%;
+    font-size: 0.9rem;
+    width: 90%;
+}
+
+.id-img img {
+    width: 84%;
+    margin-top: 10%;
+    display: flex;
+    margin-left: 9%;
+}
+
+.id-img #linkedin {
+    margin-left: 41%;
+    margin-bottom: 5%;
+}
+
+.fa-brands {
+    font-size: 2rem;
+    color: #254336;
+}
+
+.fa-brands:hover {
+    font-size: 2rem;
+    color: #B7B597;
+}
+
+/*  Tech Stack */
+
+.tech-stack {
+    display: flex;
+    align-items: center;
+    margin-top: 10%;
+    margin-left: 13%;
+}
+
+.tech-stack h3 {
+    font-size: 0.8rem;
+}
+
+.tech-stack .space {
+    font-size: 1.5rem;
+    margin-left: 16px;
+}
+
+.tech-img img {
+    width: 1.5rem;
+    display: flex;
+    margin-right: 10px;
+}
+
+.tech-img:last-child {
+    margin-right: 0;
+}
+
+.tech-img {
+    margin-right: 0;
+}
+
+/* Projects */
+
+.project {
+    padding: 5rem 0;
+    background-color: #f9f9f9;
+}
+.project h1 {
+    color: #6B8A7A;
+    padding-left: 6%;
+    margin-bottom: 5%;
+}
+
+.project h2{
+    text-align: center;
+}
+
+
+/* About */
+.about {
+    margin-top: 10%;
+}
+
+.about img {
+    max-width: 85%;
+    margin-left: 8%;
+}
+
+.about-content {
+    margin: 4%;
+    text-align: center;
+}
+
+.about-content h2 {
+    margin-bottom: 4%;
+    margin-top: 4%;
+    font-size: 1.2rem;
+}
+
+.about-content p {
+    font-size: 0.9rem;
+}
+
+
+/* Project */
+
+.project-1 img {
+    width: 100%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.project-details {
+    text-align: center;
+    margin: 0 2%;
+}
+
+/* Contact */
+
+.contact {
+    margin-top: 10%;
+    background-color: #DAD3BE;
+}
+
+.location {
+    display: flex;
+    margin-bottom: 5%;
+}
+
+.mail {
+    display: flex;
+    padding-bottom: 10%;
+}
+
+.contact-details i {
+    margin-right: 7%;
+}
+
+.contact h2 {
+    font-size: 1.3rem;
+    margin-bottom: 6%;
+    text-align: center;
+}
+
+.contact h1 {
+    font-size: 1rem;
+}
+
+.contact-details {
+    margin-left: 7%;
+}
+
+/* Footer */
+
+footer h1 {
+    font-size: 0.8rem;
+    margin-top: 10%;
+    text-align: center;
+    padding-top: 2%;
+    color: #fff;
+}
+
+footer {
+    background-color: #254336;
+    height: 10%;
+}
+
+
+/* Media Query for Tablet */
+
+@media only screen and (min-width: 768px) {
+
+    #btn {
+        padding-top: 4%;
+    }
+
+    #hamburger-icon i {
+        margin-top: -4%;
+    }
+
+    .id-img img {
+        width: 49%;
+        margin-left: 30%;
+    }
+
+    #home {
+        display: flex;
+    }
+
+    .header-hero {
+        flex-direction: row-reverse;
+    }
+
+    .main-content {
+        flex: none;
+        width: 42%;
+        margin-top: 10%;
+    }
+
+    .main-content h1 {
+        text-align: left;
+        font-size: 1.8rem;
+    }
+
+    .main-content p {
+        text-align: left;
+        margin-left: 18%;
+        font-size: 1rem;
+    }
+
+    .id-img #linkedin {
+        margin-left: 46%;
+    }
+
+
+    .tech-stack h3 {
+        font-size: 1.5rem;
+    }
+
+    .tech-stack .space {
+        font-size: 2.5rem;
+        margin-left: 8px;
+    }
+
+
+    .tech-img img {
+        width: 2.5rem;
+        margin-right: 10px;
+        margin-left: 15px;
+    }
+
+
+    .about {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-right: 8%;
+        margin-bottom: 10%;
+    }
+
+    .about img {
+        max-width: 35%;
+    }
+
+    .about-content {
+        text-align: left;
+    }
+
+    .project-1 {
+        display: flex;
+    }
+
+    .project-details {
+        text-align: left;
+        margin-left: 9%;
+        margin-top: 7%;
+    }
+
+    .project-1 img {
+        width: 38%;
+        margin-left: 4%;
+    }
+
+    .contact h2 {
+        text-align: left;
+        margin-left: 7%;
+        margin-top: 3%;
+    }
+
+    .cont-sec {
+        margin-top: 1%;
+        padding-top: 3%;
+        padding-left: 3%;
+    }
+
+    .location {
+        margin-bottom: 3%;
+    }
+
+    .contact-details i {
+        margin-right: 4%;
+    }
+}
+
+
+/* Small Desktop */
+
+@media only screen and (min-width: 992px) {
+
+    #hamburger-icon {
+        display: none;
+    }
+
+    .logos {
+        display: none;
+    }
+
+    .logo {
+        display: flex;
+        color: #254336;
+        font-weight: bold;
+    }
+
+    .menu-item {
+        justify-content: center;
+        gap: 10%;
+        display: flex;
+        font-weight: 500;
+    }
+
+    .menu-item:hover {
+        color: #B7B597;
+    }
+
+    .main-content {
+        width: 50%;
+        margin-top: 0%;
+    }
+
+    .main-content h1 {
+        font-size: 2.8rem;
+    }
+
+    .main-content p {
+        font-size: 1.4rem;
+    }
+
+    .id-img img {
+        height: 75%;
+        margin-left: 25%;
+        margin-top: 0%;
+    }
+
+    .tech-stack {
+        margin-top: 2%;
+        margin-left: 15%;
+    }
+
+    .tech-img img {
+        width: 3rem;
+        margin-right: 1.5rem;
+        margin-left: 15px;
+    }
+
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .menu-item{
+        gap: 5rem;
+    }
+
+    .menu-item li a{
+        font-size: 1.5rem;
+    }
+
+    .main-content{
+        margin-top: 3%;
+    }
+
+    .id-img img{
+        margin-top: 2%;
+    }
+
+    .main-content h1{
+        font-size: 3rem;
+    }
+
+    .tech-img img {
+        width: 4rem;
+    }
+
+    .about-content h2 {
+        font-size: 1.4rem;
+        width: 21rem;
+    }
+
+    .about-content p{
+        font-size: 1.3rem;
+    }
+
+    .about-content #title{
+        font-size: 1.5rem;
+    }
+
+    .project-details p{
+        font-size: 1.3rem;
+    }
+    .project-details h2{
+        font-size: 2rem;
+        margin-bottom: 5%;
+    }
+
+    footer h1{
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
+
+}
